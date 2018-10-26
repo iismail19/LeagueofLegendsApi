@@ -19,13 +19,13 @@ public class LolRequests {
      */
     // URL+Request+?api_key=+API_KEY
     final String API_Key = "RGAPI-86d89a5d-3b70-457b-adc6-610afab42ba7";
-
+    final String BASE_API = "?api_key=";
     final String BASE_URL = "https://na1.api.riotgames.com";
 
 
     String requestSummonerByName(String sName){
         String requestUrl = "/lol/summoner/v3/summoners/by-name/";
-        return requestUrl + sName;
+        return BASE_URL + requestUrl + sName + BASE_API + API_Key;
     }
 
 
