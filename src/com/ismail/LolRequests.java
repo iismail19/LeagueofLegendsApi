@@ -22,15 +22,27 @@ public class LolRequests {
     final String BASE_API = "?api_key=";
     final String BASE_URL = "https://na1.api.riotgames.com";
 
-
+    // Returned in JSONobject
     String requestSummonerByName(String sName){
         String requestUrl = "/lol/summoner/v3/summoners/by-name/";
         return BASE_URL + requestUrl + sName + BASE_API + API_Key;
     }
 
-    String requestChampionMastery(long sId){
+    // Returned in a JSONArray
+    String requestChampionMasteries(long summonerId){
         String requestUrl = "/lol/champion-mastery/v3/champion-masteries/by-summoner/";
-        return BASE_URL + requestUrl + sId + BASE_API + API_Key;
+        return BASE_URL + requestUrl + summonerId + BASE_API + API_Key;
+    }
+
+    // Returns a single String line
+    String requestChampionMasteryScore(long summonerId){
+        String requestUrl = "/lol/champion-mastery/v3/scores/by-summoner/";
+        return BASE_URL + requestUrl + summonerId + BASE_API + API_Key;
+    }
+
+    String requestLeagueRankBySummoner(long summonerId){
+        String requestUrl = "/lol/league/v3/positions/by-summoner/";
+        return BASE_URL + requestUrl + summonerId + BASE_API + API_Key;
     }
 
 

@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5934af66-0c8c-4779-bb45-9cfc2623a523" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeagueRequests/com/ismail/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeagueRequests/com/ismail/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeagueRequests/com/ismail/Requests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeagueRequests/com/ismail/Requests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ismail/LolRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ismail/LolRequests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ismail/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ismail/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ismail/Requests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ismail/Requests.java" afterDir="false" />
     </list>
@@ -60,12 +57,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="632" />
+          <entry key="java" value="1225" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="632" />
+          <entry key="JAVA" value="1225" />
         </counts>
       </usages-collector>
     </session>
@@ -90,11 +87,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/ismail/LolRequests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="30" column="33" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="33" />
+            <state relative-caret-position="448">
+              <caret line="42" column="43" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -102,8 +99,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ismail/Requests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="77" selection-start-line="77" selection-end-line="77" />
+            <state relative-caret-position="437">
+              <caret line="88" column="21" lean-forward="true" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,11 +108,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/ismail/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="321">
-              <caret line="51" column="27" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
+            <state relative-caret-position="205">
+              <caret line="60" column="88" selection-start-line="60" selection-start-column="88" selection-end-line="60" selection-end-column="88" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -132,15 +129,23 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>requestChampionMastery</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>requestChampionMasteries</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/ismail/LolRequests.java" />
         <option value="$PROJECT_DIR$/src/com/ismail/Requests.java" />
         <option value="$PROJECT_DIR$/src/com/ismail/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/ismail/LolRequests.java" />
       </list>
     </option>
   </component>
@@ -185,7 +190,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540584235247" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540613722434" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Libraries-External/java-json.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -271,15 +276,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49954668" visible="true" weight="0.2647059" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49954668" weight="0.2647059" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.2956441" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.29520696" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5004533" side_tool="true" weight="0.32957393" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32983193" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.32897604" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -302,30 +307,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ismail/LolRequests.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ismail/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="30" column="33" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="33" />
+        <state relative-caret-position="205">
+          <caret line="60" column="88" selection-start-line="60" selection-start-column="88" selection-end-line="60" selection-end-column="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ismail/Requests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="77" selection-start-line="77" selection-end-line="77" />
+        <state relative-caret-position="437">
+          <caret line="88" column="21" lean-forward="true" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ismail/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/ismail/LolRequests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="51" column="27" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="448">
+          <caret line="42" column="43" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
         </state>
       </provider>
     </entry>

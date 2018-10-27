@@ -6,9 +6,7 @@ import java.net.URL;
 import java.io.*;
 import java.util.*;
 
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
+import org.json.*;
 
 // download dependency here:  http://chillyfacts.com/download-java-json-jar/
 
@@ -75,5 +73,22 @@ public class Requests extends LolRequests{
         return  responseData;
     }
 
+    // if single line don't need a JSON formatted object
+    public String getRequestLine(String requestURL) throws IOException, JSONException {
+        URL link = new URL(requestURL);
+        HttpURLConnection connect = (HttpURLConnection) link.openConnection();
+        // response code: tells us if the request url is successful
+        int responeCode = connect.getResponseCode();
+        // returns the response from the link
+        BufferedReader in = new BufferedReader(new InputStreamReader(connect.getInputStream()));
+        String line;
+        StringBuffer response = new StringBuffer();
+        while ((line = in.readLine()) != null){
+            //line = line.replace("[", "").replace("]", "");
+            response.append(line);
+        } in.close();
+        connect.disconnect();
+        return  line = response.toString();
+    }
 
 }

@@ -41,21 +41,28 @@ public class Main {
         JSONObject resutls;
         JSONObject resultList;
         JSONArray array;
+        JSONArray rankArray;
+        String line;
         // Single Object
         resutls = httpRequest.getRequest(httpRequest.requestSummonerByName("DeathDragon97"));
         System.out.println(resutls.toString());
         // accountId != summonerID
         // summonerId == Id
 
-        resultList = httpRequest.getRequestList(httpRequest.requestChampionMastery(40396988));
+        resultList = httpRequest.getRequestList(httpRequest.requestChampionMasteries(40396988));
         System.out.println(resultList.toString());
         System.out.println();
-        array = httpRequest.getRequestArray(httpRequest.requestChampionMastery(40396988));
+        array = httpRequest.getRequestArray(httpRequest.requestChampionMasteries(40396988));
         System.out.println(array.toString());
+        System.out.println();
+        line = httpRequest.getRequestLine(httpRequest.requestChampionMasteryScore(40396988));
+        System.out.println(line);
+        System.out.println();
+        rankArray = httpRequest.getRequestArray(httpRequest.requestLeagueRankBySummoner(40396988));
+        System.out.println(rankArray.toString());
+        System.out.println();
 
 
-
-        // List Object
     }
 
 
