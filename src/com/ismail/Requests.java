@@ -24,9 +24,30 @@ public class Requests extends LolRequests{
         String line;
         StringBuffer response = new StringBuffer();
         while ((line = in.readLine()) != null){
+            //line = line.replace("[", "").replace("]", "");
             response.append(line);
         } in.close();
 
+        JSONObject responseData = new JSONObject(response.toString());
+        return  responseData;
+    }
+
+    public JSONObject getRequestList(String requestURL) throws IOException, JSONException {
+        URL link = new URL(requestURL);
+        HttpURLConnection connect = (HttpURLConnection) link.openConnection();
+        // response code: tells us if the request url is successful
+        int responeCode = connect.getResponseCode();
+        // returns the response from the link
+        BufferedReader in = new BufferedReader(new InputStreamReader(connect.getInputStream()));
+        String line;
+        StringBuffer response = new StringBuffer();
+        response.append("{");
+        response.append("\"List\":");
+        while ((line = in.readLine()) != null){
+            //line = line.replace("[", "{").replace("]", "}");
+            response.append(line);
+        } in.close();
+        response.append("}");
         JSONObject responseData = new JSONObject(response.toString());
         return  responseData;
     }

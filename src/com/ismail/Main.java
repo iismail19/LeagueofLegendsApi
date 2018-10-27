@@ -35,19 +35,21 @@ public class Main {
         newConnection.disconnect();
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws IOException, JSONException{
         Requests httpRequest = new Requests();
         JSONObject resutls;
-        try {
-            resutls = httpRequest.getRequest(httpRequest.requestSummonerByName("DeathDragon97"));
-            System.out.println(resutls.get("summonerLevel").toString());
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
 
 
+        // Single Object
+        resutls = httpRequest.getRequest(httpRequest.requestSummonerByName("DeathDragon97"));
+        System.out.println(resutls.toString());
+        // accountId != summonerID
+        // summonerId == Id
+
+        resutls = httpRequest.getRequestList(httpRequest.requestChampionMastery(40396988));
+        System.out.println(resutls.toString());
+
+        // List Object
     }
 
 

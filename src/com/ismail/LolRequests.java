@@ -28,6 +28,10 @@ public class LolRequests {
         return BASE_URL + requestUrl + sName + BASE_API + API_Key;
     }
 
+    String requestChampionMastery(long sId){
+        String requestUrl = "/lol/champion-mastery/v3/champion-masteries/by-summoner/";
+        return BASE_URL + requestUrl + sId + BASE_API + API_Key;
+    }
 
 
 }
