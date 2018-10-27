@@ -1,5 +1,6 @@
 package com.ismail;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -38,16 +39,21 @@ public class Main {
     public static void main(String[] args) throws IOException, JSONException{
         Requests httpRequest = new Requests();
         JSONObject resutls;
-
-
+        JSONObject resultList;
+        JSONArray array;
         // Single Object
         resutls = httpRequest.getRequest(httpRequest.requestSummonerByName("DeathDragon97"));
         System.out.println(resutls.toString());
         // accountId != summonerID
         // summonerId == Id
 
-        resutls = httpRequest.getRequestList(httpRequest.requestChampionMastery(40396988));
-        System.out.println(resutls.toString());
+        resultList = httpRequest.getRequestList(httpRequest.requestChampionMastery(40396988));
+        System.out.println(resultList.toString());
+        System.out.println();
+        array = httpRequest.getRequestArray(httpRequest.requestChampionMastery(40396988));
+        System.out.println(array.toString());
+
+
 
         // List Object
     }
