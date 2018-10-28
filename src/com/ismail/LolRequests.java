@@ -39,11 +39,16 @@ public class LolRequests {
         String requestUrl = "/lol/champion-mastery/v3/scores/by-summoner/";
         return BASE_URL + requestUrl + summonerId + BASE_API + API_Key;
     }
-
+    // Returns a JSONArray
     String requestLeagueRankBySummoner(long summonerId){
         String requestUrl = "/lol/league/v3/positions/by-summoner/";
         return BASE_URL + requestUrl + summonerId + BASE_API + API_Key;
     }
 
+
+    String requestSpectateActiveGameBySummoner(long summonerId){
+        String requestUrl = "/lol/spectator/v3/active-games/by-summoner/";
+        return BASE_URL + requestUrl + summonerId + BASE_API + API_Key;
+    }
 
 }

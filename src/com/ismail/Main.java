@@ -43,12 +43,14 @@ public class Main {
         JSONArray array;
         JSONArray rankArray;
         String line;
+        JSONObject actvitveMatch;
         // Single Object
         resutls = httpRequest.getRequest(httpRequest.requestSummonerByName("DeathDragon97"));
         System.out.println(resutls.toString());
         // accountId != summonerID
         // summonerId == Id
 
+        // view Json Code Formated at http://jsonviewer.stack.hu/
         resultList = httpRequest.getRequestList(httpRequest.requestChampionMasteries(40396988));
         System.out.println(resultList.toString());
         System.out.println();
@@ -61,7 +63,8 @@ public class Main {
         rankArray = httpRequest.getRequestArray(httpRequest.requestLeagueRankBySummoner(40396988));
         System.out.println(rankArray.toString());
         System.out.println();
-
+        actvitveMatch = httpRequest.getRequest(httpRequest.requestSpectateActiveGameBySummoner(25850956));//nightblue3 id
+        System.out.println(actvitveMatch.toString());
 
     }
 
