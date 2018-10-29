@@ -63,6 +63,7 @@ public class Main {
         rankArray = httpRequest.getRequestArray(httpRequest.requestLeagueRankBySummoner(40396988));
         System.out.println(rankArray.toString());
         System.out.println();
+        // This one won't always run.. unless the person is in game
         actvitveMatch = httpRequest.getRequest(httpRequest.requestSpectateActiveGameBySummoner(25850956));//nightblue3 id
         System.out.println(actvitveMatch.toString());
 
