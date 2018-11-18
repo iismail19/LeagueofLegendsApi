@@ -51,18 +51,24 @@ public class Main {
         // summonerId == Id
 
         // view Json Code Formated at http://jsonviewer.stack.hu/
-        resultList = httpRequest.getRequestList(httpRequest.requestChampionMasteries(40396988));
-        System.out.println(resultList.toString());
-        System.out.println();
+//        resultList = httpRequest.getRequestList(httpRequest.requestChampionMasteries(40396988));
+//        System.out.println(resultList.toString());
+//        System.out.println();
         array = httpRequest.getRequestArray(httpRequest.requestChampionMasteries(40396988));
         System.out.println(array.toString());
         System.out.println();
-        line = httpRequest.getRequestLine(httpRequest.requestChampionMasteryScore(40396988));
-        System.out.println(line);
-        System.out.println();
-        rankArray = httpRequest.getRequestArray(httpRequest.requestLeagueRankBySummoner(40396988));
-        System.out.println(rankArray.toString());
-        System.out.println();
+        // get each object in the array
+        for (int i = 0; i < array.length(); i++) {
+            JSONObject currentChamp = array.getJSONObject(i);
+            long championId = currentChamp.getLong("championId");
+
+        }
+//        line = httpRequest.getRequestLine(httpRequest.requestChampionMasteryScore(40396988));
+//        System.out.println(line);
+//        System.out.println();
+//        rankArray = httpRequest.getRequestArray(httpRequest.requestLeagueRankBySummoner(40396988));
+//        System.out.println(rankArray.toString());
+//        System.out.println();
         // This one won't always run.. unless the person is in game
         /*
         actvitveMatch = httpRequest.getRequest(httpRequest.requestSpectateActiveGameBySummoner(25850956));//nightblue3 id
