@@ -1,13 +1,12 @@
 package com.ismail;
 
-import java.util.HashMap;
+import java.util.*;
 
 public class Champions {
-    private HashMap<Long, String> championList = new HashMap<>();
-
-    public HashMap<Long, String> getChampionList() {
-        return championList;
+    static HashMap<Integer, String> championIdtoName = new HashMap<>();
+    // works in static context if outside of main
+    static {
+        //championIdtoName.put();
     }
-
 
 }
