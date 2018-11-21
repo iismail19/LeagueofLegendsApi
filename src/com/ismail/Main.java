@@ -4,14 +4,13 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.AbstractMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 public class Main {
     // Send Get Request
@@ -77,6 +76,9 @@ public class Main {
         actvitveMatch = httpRequest.getRequest(httpRequest.requestSpectateActiveGameBySummoner(25850956));//nightblue3 id
         System.out.println(actvitveMatch.toString());
         */
+        // run once and done..
+//        String filename = "D:\\Code\\LeagueofLegendsApi\\src\\com\\ismail\\keytoName.txt";
+//        Util.createQuickMapIdToNameForChampions(filename);
     }
 
 
