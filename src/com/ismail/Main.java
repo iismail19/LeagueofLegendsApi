@@ -53,8 +53,8 @@ public class Main {
         // summonerId == Id
 
         // view Json Code Formated at http://jsonviewer.stack.hu/
-//        resultList = httpRequest.getRequestList(httpRequest.requestChampionMasteries(40396988));
-//        System.out.println(resultList.toString());
+        resultList = httpRequest.getRequestList(httpRequest.requestChampionMasteries(40396988));
+        System.out.println(resultList.toString());
 //        System.out.println();
 //        array = httpRequest.getRequestArray(httpRequest.requestChampionMasteries(40396988));
 //        System.out.println(array.toString());
