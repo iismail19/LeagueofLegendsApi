@@ -56,15 +56,15 @@ public class Main {
 //        resultList = httpRequest.getRequestList(httpRequest.requestChampionMasteries(40396988));
 //        System.out.println(resultList.toString());
 //        System.out.println();
-        array = httpRequest.getRequestArray(httpRequest.requestChampionMasteries(40396988));
-        System.out.println(array.toString());
-        System.out.println();
-        // get each object in the array
-        for (int i = 0; i < array.length(); i++) {
-            JSONObject currentChamp = array.getJSONObject(i);
-            long championId = currentChamp.getLong("championId");
-
-        }
+//        array = httpRequest.getRequestArray(httpRequest.requestChampionMasteries(40396988));
+//        System.out.println(array.toString());
+//        System.out.println();
+//        // get each object in the array
+//        for (int i = 0; i < array.length(); i++) {
+//            JSONObject currentChamp = array.getJSONObject(i);
+//            long championId = currentChamp.getLong("championId");
+//
+//        }
 //        line = httpRequest.getRequestLine(httpRequest.requestChampionMasteryScore(40396988));
 //        System.out.println(line);
 //        System.out.println();
